@@ -17,33 +17,39 @@
   <body>
     <header>
       <h1>Extract Tables (with Links) from URL or HTML</h1>
-   
     </header>
     <main>
-      <fieldset>        
-        <legend>Datos de la tabla</legend>
-        <p>
-          Este proyecto es una herramienta simple que convierte texto en slugs
-          (URLs amigables). Es útil para generar rutas limpias y comprensibles,
-          como las que se utilizan en blogs o sitios web.
-        </p>
-        <form id="tableExtractorForm">
-          <label for="urlInput">Enter URL:</label>
-          <input type="text" id="urlInput" placeholder="https://example.com" />
-  
-          <label for="htmlInput">Or paste HTML:</label>
-          <textarea id="htmlInput" placeholder="<table>...</table>"></textarea>
-  
-          <button type="button" id="processButton">Process</button>
-        </form>
-      </fieldset>
-  
-      <fieldset>
-        <legend>Extracted Data</legend>
-        <pre id="output">Output will appear here...</pre>
-        <br>
-        <button id="copyButton" disabled>Copy to Clipboard</button>
-      </fieldset>
+      <div class="container">
+        <fieldset>
+          <legend>Datos de la tabla</legend>
+          <p>
+            Este proyecto es una herramienta simple que convierte texto en slugs
+            (URLs amigables). Es útil para generar rutas limpias y
+            comprensibles, como las que se utilizan en blogs o sitios web.
+          </p>
+          <form id="tableExtractorForm">
+            <label for="urlInput">Enter URL:</label>
+            <input
+              type="text"
+              id="urlInput"
+              placeholder="https://example.com"
+            />
+            <label for="htmlInput">Or paste HTML:</label>
+            <textarea
+              id="htmlInput"
+              placeholder="<table>...</table>"
+            ></textarea>
+            <button type="button" id="processButton">Process</button>
+          </form>
+        </fieldset>
+
+        <fieldset>
+          <legend>Extracted Data</legend>
+          <pre id="output">Output will appear here...</pre>
+          <br />
+          <button id="copyButton" disabled>Copy to Clipboard</button>
+        </fieldset>
+      </div>
     </main>
     <footer>
       <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
